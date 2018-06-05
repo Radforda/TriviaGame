@@ -13,7 +13,7 @@
 
   <body>
     <header> Trivia Game!! </header>
-
+    <button id="start">Start Game</button>
     <div id="questionContent">
       <div id="timer"></div>
       <div id="question"></div>
@@ -25,10 +25,16 @@
     <div id="answerContent">
         <div id="result"></div>
         <div id="solution"></div>
-        <div id="video"></div>    
+        <video id="video" type="video/mp4"width="320" height="240" controls>
+                </video> 
+        </div>    
     </div>
 
     <footer></footer>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+   
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="assets/game.js"></script>
   </body>
 </html>
