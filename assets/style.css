@@ -7,7 +7,8 @@
 
 .background{padding:0;
     margin:0;
-    background-image: url("images/pikachuBackground.png");
+    background-image: url("images/pikachuBackground.jpg");
+    background-size: cover;
 }
 img{display:inline-block;
 align-items: center}
