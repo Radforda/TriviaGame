@@ -91,12 +91,14 @@ $(".start").off().click(start);
 //Functions
 function start(){
     if (arrayIndex<questionArray.length){
+    runTimer();
     $(".start").hide();
     $("#answerContent").hide();
     $("#questionContent").show();
     $("#finalResults").hide();
-    runTimer();
+    
     current=questionArray[arrayIndex];
+    $("#timer").html("Time Remaining: ");
     $("#question").html(current.question);
     $("#answer1").html(current.answer1).off().click(current.answer1Result);
     $("#answer2").html(current.answer2).off().click(current.answer2Result);
@@ -169,7 +171,7 @@ function runTimer() {
 
 function decrement() {
   number--;
-  $("#timer").html( number);
+  $("#timer").html("Time Remaining: "+ number);
   if (number === 0) {
     stopTimer();
     timesUp();
